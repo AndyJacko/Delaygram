@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
+
+:root {
+  --blue: #0095f6;
+  --white: #ffffff;
+  --black: #000000;
+  --gray: #c7c7c7;
+  --searchBG: #f2f3f5;
+  --searchPH: #bcbcbc;
+  --bodyBG: #fafafa;
+  --storyIB: #c41e1e;
+  --vac: #aaaaaa;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: var(--bodyBG);
+  color: var(--black);
+}
+
+/* COMMON STYLES */
+
+.flex-v {
+  display: flex;
+  align-items: center;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+.flex-between {
+  justify-content: space-between;
+}
+
+.flex-start {
+  justify-content: flex-start;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+.fs-sm {
+  font-size: small;
+}
+
+.fs-xl {
+  font-size: x-large;
+}
+
+.hide {
+  display: none;
+}
+
+/* HEADER SECTION */
+
+header {
+  height: 60px;
+  border-bottom: 1px solid var(--gray);
+  background: var(--white);
+  position: relative;
+}
+
+#profile-menu {
+  width: 300px;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  top: 60px;
+  right: 450px;
+  background: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 0 6px var(--gray);
+}
+
+#theme {
+  cursor: pointer;
+}
+
+#header-container {
+  width: 50%;
+}
+
+#logo {
+  width: 25%;
+}
+
+#search-input {
+  width: 280px;
+  height: 36px;
+  padding: 10px 10px 10px 40px;
+  border: 0 solid transparent;
+  border-radius: 10px;
+  background: url(images/mag.png) no-repeat scroll 8px 8px var(--searchBG);
+}
+
+#search-input:focus {
+  outline: none;
+  padding: 10px;
+  background: var(--searchBG);
+}
+
+#search-input::placeholder {
+  color: var(--searchPH);
+}
+
+nav {
+  width: 35%;
+}
+
+.nav-icon {
+  margin: auto 10px;
+  cursor: pointer;
+}
+
+.nav-icon a,
+.nav-icon a:hover,
+.nav-icon a:visited,
+.post-icon a,
+.post-icon a:hover,
+.post-icon a:visited,
+.kill-right a,
+.kill-right a:hover,
+.kill-right a:visited {
+  color: var(--black);
+  text-decoration: none;
+}
+
+#pp {
+  width: 25px;
+  height: 25px;
+  border: 1px solid var(--black);
+  border-radius: 25px;
+}
+
+/* MAIN SECTION */
+
+main {
+  width: 45%;
+  margin: 20px auto;
+}
+
+#main-container {
+  display: flex;
+}
+
+#content {
+  width: 50%;
+}
+
+#story-icons {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--gray);
+  background: var(--white);
+}
+
+#story-icons div {
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+.story-icon {
+  width: 60px;
+  height: 60px;
+  border: 3px solid var(--storyIB);
+  border-radius: 60px;
+  margin-bottom: 5px;
+}
+
+.post {
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--gray);
+  background: var(--white);
+  overflow: hidden;
+}
+
+.post-header {
+  padding: 1rem;
+}
+
+.post-info {
+  padding: 1rem;
+}
+
+.post-icon {
+  width: 35px;
+  height: 35px;
+  border-radius: 35px;
+  margin-right: 0.5rem;
+}
+
+.kill-right {
+  height: 30px;
+}
+
+.flip {
+  transform: scaleX(-1);
+}
+
+.post-image img {
+  width: 100%;
+}
+
+.hashtag {
+  color: var(--blue);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.view-all-comments {
+  color: var(--vac);
+  cursor: pointer;
+}
+
+.post-comment {
+  padding: 0 1rem;
+  border-top: 1px solid var(--gray);
+}
+
+.post-comment input {
+  height: 20px;
+  border: none;
+  padding: 10px;
+  background: transparent;
+}
+
+.post-comment input:focus {
+  outline: none;
+}
+
+.post-comment p {
+  color: var(--blue);
+  cursor: pointer;
+}
+
+/* RIGHT COLUMN */
+
+.profile-icon {
+  border: none;
+  margin-right: 1rem;
+}
+
+#suggestions {
+  width: 50%;
+  padding: 1rem 2rem;
+}
+
+#see-all {
+  font-size: 0.8rem;
+}
+
+.follow-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  margin-right: 0.75rem;
+}
+
+.follow-link {
+  color: var(--blue);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.verified {
+  width: 12px;
+  height: 12px;
+  margin-left: 5px;
+}
+
+/* FOOTER SECTION */
+
+footer {
+  color: var(--gray);
+  margin-top: 1rem;
+}
+
+#footer-links {
+  margin-bottom: 15px;
+}
+
+#footer-links a,
+#footer-links a:visited {
+  margin: 0 10px 0 0;
+  color: var(--gray);
+  text-decoration: none;
+}
+
+#footer-copy a,
+#footer-copy a:visited {
+  color: var(--gray);
+  text-decoration: none;
+}
+
+#footer-copy a:hover,
+#footer-links a:hover {
+  text-decoration: underline;
+}
