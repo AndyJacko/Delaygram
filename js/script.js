@@ -28,3 +28,7 @@ document.getElementById("pp").addEventListener("click", (e) => {
 document.querySelector("main").addEventListener("click", (e) => {
   document.getElementById("profile-menu").classList.add("hide");
 });
+
+document.getElementById("p-link").addEventListener("click", (e) => {
+  window.location.href = "profile.html";
+});

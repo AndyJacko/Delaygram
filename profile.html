@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link id="pagestyle" rel="stylesheet" href="css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/8692751f21.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Andy Jacko (@4ndyjacko)</title>
   </head>
   <body>
@@ -46,20 +51,87 @@
         </nav>
 
         <div id="profile-menu" class="hide">
+          <p id="p-link"><i class="fa-regular fa-circle-user"></i>Profile</p>
           <p>
-            <i class="fa-regular fa-circle-user"></i>&nbsp;&nbsp;&nbsp;Profile
+            <i class="fa-solid fa-repeat"></i
+            ><span id="theme" onClick="toggleDarkness();">Dark Theme</span>
           </p>
-          <p>
-            <i class="fa-solid fa-repeat"></i>&nbsp;&nbsp;&nbsp;<span
-              id="theme"
-              onClick="toggleDarkness();"
-              >Dark Theme</span
-            >
-          </p>
+          <div id="logout">Log out</div>
         </div>
       </div>
     </header>
 
-    <main></main>
+    <main>
+      <!-- PROFILE INFO -->
+      <section id="profile-info" class="flex-v">
+        <div><img src="images/pp/pp.jpg" alt="Andy Jacko" /></div>
+        <div>
+          <div>
+            4ndyjacko <button>Edit Profile</button
+            ><i class="fa-solid fa-gear"></i>
+          </div>
+          <div>
+            <span>490 posts</span><span>495 followers</span
+            ><span>735 following</span>
+          </div>
+          <div>
+            <div><strong>Andy Jacko</strong></div>
+            <div>
+              I play with yoyos and I collect spiders, Wu-Tang & Star Wars
+              shit...
+            </div>
+            <div>
+              <a href="https://yoyo.andyjacko.com" target="_blank"
+                >yoyo.andyjacko.com</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- POSTS SAVED TAGGED -->
+      <section id="p-s-t" class="flex-v flex-center">
+        <div><i class="fa-solid fa-table-cells"></i>Posts</div>
+        <div><i class="fa-regular fa-bookmark"></i>Saved</div>
+        <div><i class="fa-regular fa-circle-user"></i>Tagged</div>
+      </section>
+
+      <!-- GALLERY -->
+      <section id="gallery">
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+      </section>
+    </main>
+    <script src="js/script.js"></script>
   </body>
 </html>

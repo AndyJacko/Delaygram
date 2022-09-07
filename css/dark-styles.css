@@ -59,6 +59,10 @@ body {
   font-size: x-large;
 }
 
+.fs-xxl {
+  font-size: xx-large;
+}
+
 .hide {
   display: none;
 }
@@ -73,14 +77,23 @@ header {
 }
 
 #profile-menu {
-  width: 300px;
+  width: 230px;
   padding: 0.5rem 1rem;
   position: absolute;
-  top: 60px;
-  right: 450px;
+  top: 55px;
+  right: 475px;
   background: var(--white);
-  border-radius: 10px;
+  border-radius: 5px;
   box-shadow: 0 0 6px var(--gray);
+}
+
+#profile-menu i {
+  padding-right: 0.3rem;
+}
+
+#logout {
+  padding: 0.5rem 1rem;
+  border-top: 1px solid var(--gray);
 }
 
 #theme {
@@ -96,12 +109,12 @@ header {
 }
 
 #search-input {
-  width: 280px;
+  width: 270px;
   height: 36px;
   padding: 10px 10px 10px 40px;
   border: 0 solid transparent;
   border-radius: 10px;
-  background: url(images/mag.png) no-repeat scroll 8px 8px var(--searchBG);
+  background: url(/images/mag.png) no-repeat scroll 8px 8px var(--searchBG);
 }
 
 #search-input:focus {
@@ -115,11 +128,11 @@ header {
 }
 
 nav {
-  width: 35%;
+  width: 25%;
 }
 
 .nav-icon {
-  margin: auto 10px;
+  margin: auto 12px;
   cursor: pointer;
 }
 
@@ -137,10 +150,14 @@ nav {
 }
 
 #pp {
-  width: 25px;
-  height: 25px;
+  width: 28px;
+  height: 28px;
   border: 1px solid var(--black);
-  border-radius: 25px;
+  border-radius: 28px;
+}
+
+#p-link {
+  cursor: pointer;
 }
 
 /* MAIN SECTION */
@@ -307,4 +324,11 @@ footer {
 #footer-copy a:hover,
 #footer-links a:hover {
   text-decoration: underline;
+}
+
+/* PROFILE PAGE */
+
+#profile-info img {
+  margin: 1.5rem 4rem 2rem 1.7rem;
+  border-radius: 50%;
 }
