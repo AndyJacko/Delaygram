@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link id="pagestyle" rel="stylesheet" href="styles.css" />
+    <link id="pagestyle" rel="stylesheet" href="css/styles.css" />
     <script
       src="https://kit.fontawesome.com/8692751f21.js"
       crossorigin="anonymous"
@@ -14,33 +14,62 @@
   <body>
     <header class="flex-v flex-center">
       <div id="header-container" class="flex-v flex-between">
-        <div id="logo"><a href="index.html"><img id="logo-img" src="images/logo.png" alt="Delaygram" /></a></div>
+        <div id="logo">
+          <a href="index.html"
+            ><img id="logo-img" src="images/logo.png" alt="Delaygram"
+          /></a>
+        </div>
 
-        <div id="search"><input id="search-input" type="text" placeholder="Search" /></div>
+        <div id="search">
+          <input id="search-input" type="text" placeholder="Search" />
+        </div>
 
         <nav class="flex-v flex-end fs-xl">
-          <div class="nav-icon"><a href="index.html"><i class="fa-solid fa-house"></i></a></div>
-          <div class="nav-icon"><a href=""><i class="fa-regular fa-paper-plane"></i></a></div>
-          <div class="nav-icon"><a href=""><i class="fa-regular fa-square-plus"></i></a></div>
-          <div class="nav-icon"><a href=""><i class="fa-regular fa-compass"></i></a></div>
-          <div class="nav-icon"><a href=""><i class="fa-regular fa-heart"></i></a></div>
-          <div class="nav-icon"><img id="pp" class="flex-v" src="images/pp/pp.jpg" alt="Andy Jacko" /></div>
+          <div class="nav-icon">
+            <a href="index.html"><i class="fa-solid fa-house"></i></a>
+          </div>
+          <div class="nav-icon">
+            <a href=""><i class="fa-regular fa-paper-plane"></i></a>
+          </div>
+          <div class="nav-icon">
+            <a href=""><i class="fa-regular fa-square-plus"></i></a>
+          </div>
+          <div class="nav-icon">
+            <a href=""><i class="fa-regular fa-compass"></i></a>
+          </div>
+          <div class="nav-icon">
+            <a href=""><i class="fa-regular fa-heart"></i></a>
+          </div>
+          <div class="nav-icon">
+            <img
+              id="pp"
+              class="flex-v"
+              src="images/pp/pp.jpg"
+              alt="Andy Jacko"
+            />
+          </div>
+        </nav>
+
+        <div id="profile-menu" class="hide">
+          <p>
+            <i class="fa-regular fa-circle-user"></i>&nbsp;&nbsp;&nbsp;Profile
+          </p>
+          <p>
+            <i class="fa-solid fa-repeat"></i>&nbsp;&nbsp;&nbsp;<span
+              id="theme"
+              onClick="toggleDarkness();"
+              >Dark Theme</span
+            >
+          </p>
         </div>
-      </nav>
-
-      <div id="profile-menu" class="hide">
-        <p><i class="fa-regular fa-circle-user"></i>&nbsp;&nbsp;&nbsp;Profile</p>
-        <p><i class="fa-solid fa-repeat"></i>&nbsp;&nbsp;&nbsp;<span id="theme" onClick="toggleDarkness();">Dark Theme</span></p>
       </div>
-
     </header>
 
     <main>
       <div id="main-container">
         <section id="content">
-
           <!--TOP STORIES -->
-          
+
           <div id="story-icons" class="flex-v flex-between">
             <div>
               <img
@@ -51,7 +80,11 @@
               <span>d4rthv4d3r</span>
             </div>
             <div>
-              <img class="flex-v story-icon" src="images/pp/cartman-pp.jpg" alt="Cow" />
+              <img
+                class="flex-v story-icon"
+                src="images/pp/cartman-pp.jpg"
+                alt="Cow"
+              />
               <span>c4rtm4n</span>
             </div>
             <div>
@@ -63,7 +96,11 @@
               <span>og_krueger</span>
             </div>
             <div>
-              <img class="flex-v story-icon" src="images/pp/odb-pp.jpg" alt="ODB" />
+              <img
+                class="flex-v story-icon"
+                src="images/pp/odb-pp.jpg"
+                alt="ODB"
+              />
               <span>oldirtyb</span>
             </div>
             <div>
@@ -261,7 +298,8 @@
               <p><strong>9,652 likes</strong></p>
 
               <p>
-                <strong>ultron1968</strong> Feeling evil...may kill these fools later...
+                <strong>ultron1968</strong> Feeling evil...may kill these fools
+                later...
                 <span class="hashtag">#avengersassemble</span>
                 <span class="hashtag">#bunchoffools</span>
                 <span class="hashtag">#nomatchforme</span>
@@ -423,6 +461,6 @@
       </div>
     </main>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
