@@ -5,53 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link id="pagestyle" rel="stylesheet" href="css/styles.css" />
-    <script
-      src="https://kit.fontawesome.com/8692751f21.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/8692751f21.js" crossorigin="anonymous"></script>
+    
     <title>Delaygram</title>
   </head>
   <body>
-    <header class="flex-v flex-center">
-      <div id="header-container" class="flex-v flex-between">
-        <div id="logo">
-          <a href="index.html"
-            ><img id="logo-img" src="images/logo.png" alt="Delaygram"
-          /></a>
+    <!-- HEADER SECTION -->
+    <header>
+      <div id="header-container">
+        <!-- LOGO -->
+        <div id="logo" class="nav-icon" onClick="window.location.href='index.html'">
+          <img id="logo-img" src="images/logo.png" alt="Delaygram" />
         </div>
 
+        <!-- SEARCH BOX -->
         <div id="search">
           <input id="search-input" type="text" placeholder="Search" />
         </div>
 
-        <nav class="flex-v flex-end fs-xl">
-          <div class="nav-icon">
-            <a href="index.html"><i class="fa-solid fa-house"></i></a>
-          </div>
-          <div class="nav-icon">
-            <a href=""><i class="fa-regular fa-paper-plane"></i></a>
-          </div>
-          <div class="nav-icon">
-            <a href=""><i class="fa-regular fa-square-plus"></i></a>
-          </div>
-          <div class="nav-icon">
-            <a href=""><i class="fa-regular fa-compass"></i></a>
-          </div>
-          <div class="nav-icon">
-            <a href=""><i class="fa-regular fa-heart"></i></a>
-          </div>
-          <div class="nav-icon">
-            <img
-              id="pp"
-              class="flex-v"
-              src="images/pp/pp.jpg"
-              alt="Andy Jacko"
-            />
-          </div>
+        <!-- NAV ICONS -->
+        <nav id="nav">
+          <div class="nav-icon" onClick="window.location.href='index.html'"><i class="fa-solid fa-house"></i></div>
+          <div class="nav-icon"><i class="fa-regular fa-paper-plane"></i></div>
+          <div class="nav-icon"><i class="fa-regular fa-square-plus"></i></div>
+          <div class="nav-icon"><i class="fa-regular fa-compass"></i></div>
+          <div class="nav-icon"><i class="fa-regular fa-heart"></i></div>
+          <div class="nav-icon"><img id="pp" class="flex-v" src="images/pp/pp.jpg" alt="Andy Jacko" /></div>
         </nav>
 
+        <!-- PROFILE MENU -->
         <div id="profile-menu" class="hide">
-          <p id="p-link"><i class="fa-regular fa-circle-user"></i>Profile</p>
+          <p id="p-link" class="nav-icon" onClick="window.location.href='profile.html'"><i class="fa-regular fa-circle-user"></i>Profile</p>
           <p>
             <i class="fa-solid fa-repeat"></i
             ><span id="theme" onClick="toggleDarkness();">Dark Theme</span>
@@ -61,402 +45,289 @@
       </div>
     </header>
 
+    <!-- MAIN CONTENT SECTION -->
     <main>
-      <div id="main-container">
-        <section id="content">
-          <!--TOP STORIES -->
+      <div id="content-container">
+        <!-- TOP STORIES & POSTS -->
+        <section id="posts">        
+          <!-- TOP STORIES SECTION -->
+          <div id="story-icons">
+            <!-- DARTH VADER -->
+            <div>
+              <img class="nav-icon story-icon" src="images/pp/vader-pp.jpg" alt="Darth Vader" />
+              <span class="nav-icon">d4rthv4d3r</span>
+            </div>
 
-          <div id="story-icons" class="flex-v flex-between">
+            <!-- CARTMAN -->
             <div>
-              <img
-                class="flex-v story-icon"
-                src="images/pp/vader-pp.jpg"
-                alt="Darth Vader"
-              />
-              <span>d4rthv4d3r</span>
+              <img class="nav-icon story-icon" src="images/pp/cartman-pp.jpg" alt="Cow" />
+              <span class="nav-icon">c4rtm4n</span>
             </div>
+
+            <!-- FREDDY -->
             <div>
-              <img
-                class="flex-v story-icon"
-                src="images/pp/cartman-pp.jpg"
-                alt="Cow"
-              />
-              <span>c4rtm4n</span>
+              <img class="nav-icon story-icon" src="images/pp/freddy-pp.jpg" alt="Freddy" />
+              <span class="nav-icon">og_krueger</span>
             </div>
+
+            <!-- ODB -->
             <div>
-              <img
-                class="flex-v story-icon"
-                src="images/pp/freddy-pp.jpg"
-                alt="Freddy"
-              />
-              <span>og_krueger</span>
+              <img class="nav-icon story-icon" src="images/pp/odb-pp.jpg" alt="ODB" />
+              <span class="nav-icon">oldirtyb</span>
             </div>
+
+            <!-- ULTRON -->
             <div>
-              <img
-                class="flex-v story-icon"
-                src="images/pp/odb-pp.jpg"
-                alt="ODB"
-              />
-              <span>oldirtyb</span>
+              <img class="nav-icon story-icon" src="images/pp/ultron-pp.jpg" alt="Ultron" />
+              <span class="nav-icon">ultron1968</span>
             </div>
+            
+            <!-- THANOS -->
             <div>
-              <img
-                class="flex-v story-icon"
-                src="images/pp/ultron-pp.jpg"
-                alt="Ultron"
-              />
-              <span>ultron1968</span>
+              <img class="nav-icon story-icon" src="images/pp/thanos-pp.jpg" alt="Ultron" />
+              <span class="nav-icon">thanosftw</span>
             </div>
           </div>
 
-          <!-- DARTH VADER POST -->
+          <div id="post-container">
 
-          <div class="post">
-            <div class="post-header flex-v flex-between">
-              <div>
-                <div class="flex-v flex-start">
-                  <img
-                    class="flex-v post-icon"
-                    src="images/pp/vader-pp.jpg"
-                    alt="Darth Vader"
-                  />
+            <!-- DARTH VADER -->
+            <div class="post">
+              <div class="post-header">
+                <div>
+                  <div class="post-header-profile">
+                    <img class="post-icon" src="images/pp/vader-pp.jpg" alt="Darth Vader" />  
+                    <span><strong class="nav-icon">d4rthv4d3r</strong></span>
+                  </div>
+                </div>  
 
-                  <span><strong>d4rthv4d3r</strong></span>
-                </div>
+                <div class="nav-icon ellipsis"><i class="fa-solid fa-ellipsis"></i></div>
               </div>
-
-              <div><i class="fa-solid fa-ellipsis"></i></div>
-            </div>
-
-            <div class="post-image">
-              <img src="images/posts/death-star.jpg" alt="Crib" />
-            </div>
-
-            <div class="post-info">
-              <div class="fs-xl flex-v flex-between">
-                <div class="flex-v flex-start">
-                  <div class="post-icon">
-                    <a href=""><i class="fa-regular fa-heart"></i></a>
+  
+              <div class="post-image"><img src="images/posts/death-star.jpg" alt="Crib" /></div>
+  
+              <div class="post-info">
+                <div class="post-info-icons">
+                  <div class="like-n-comment">
+                    <div class="post-icon"><i class="fa-regular fa-heart"></i></div>  
+                    <div class="post-icon"><i class="fa-regular fa-comment flip"></i></div>  
+                    <div class="post-icon"><i class="fa-regular fa-paper-plane"></i></div>
                   </div>
 
-                  <div class="post-icon">
-                    <a href=""><i class="fa-regular fa-comment flip"></i></a>
+                  <div class="nav-icon"><i class="fa-regular fa-bookmark"></i></div>
+                </div>
+  
+                <p class="likes-count"><strong class="nav-icon">7 billion likes</strong></p>
+  
+                <p class="post-comment">
+                  <strong class="nav-icon">d4rthv4d3r</strong> Some idiots trashed my crib
+                  <span class="hashtag">#rebelscum</span>
+                  <span class="hashtag">#battleofendor</span>
+                  <span class="hashtag">#jedimuppets</span>
+                </p>
+  
+                <p class="nav-icon view-all-comments">View all 300 comments</p>
+  
+                <p class="nav-icon time-posted">3 HOURS AGO</p>
+              </div>
+  
+              <div class="post-comments">
+                <div class="comment-container">
+                  <i class="nav-icon smiles fa-regular fa-face-smile fs-xl"></i>  
+                  <input class="comment-input" type="text" placeholder="Add a comment..." />
+                </div>
+  
+                <p class="post-link">Post</p>
+              </div>
+            </div>
+
+            <!-- CARTMAN -->
+            <div class="post">
+              <div class="post-header">
+                <div>
+                  <div class="post-header-profile">
+                    <img class="post-icon" src="images/pp/cartman-pp.jpg" alt="Eric Cartman" />  
+                    <span><strong class="nav-icon">c4rtm4n</strong></span>
+                  </div>
+                </div>  
+
+                <div class="nav-icon ellipsis"><i class="fa-solid fa-ellipsis"></i></div>
+              </div>
+  
+              <div class="post-image"><img src="images/posts/south-park.jpg" alt="Crib" /></div>
+  
+              <div class="post-info">
+                <div class="post-info-icons">
+                  <div class="like-n-comment">
+                    <div class="post-icon"><i class="fa-regular fa-heart"></i></div>  
+                    <div class="post-icon"><i class="fa-regular fa-comment flip"></i></div>  
+                    <div class="post-icon"><i class="fa-regular fa-paper-plane"></i></div>
                   </div>
 
-                  <div class="post-icon">
-                    <a href=""><i class="fa-regular fa-paper-plane"></i></a>
+                  <div class="nav-icon"><i class="fa-regular fa-bookmark"></i></div>
+                </div>
+  
+                <p class="likes-count"><strong class="nav-icon">2,634 likes</strong></p>
+  
+                <p class="post-comment">
+                  <strong class="nav-icon">c4rtm4n</strong> Group photo of the crew
+                  <span class="hashtag">#southparkcrew</span>
+                  <span class="hashtag">#kickthebaby</span>
+                  <span class="hashtag">#ohmygodtheykilledkenny</span>
+                </p>
+  
+                <p class="nav-icon view-all-comments">View all 128 comments</p>
+  
+                <p class="nav-icon time-posted">4 HOURS AGO</p>
+              </div>
+  
+              <div class="post-comments">
+                <div class="comment-container">
+                  <i class="nav-icon smiles fa-regular fa-face-smile fs-xl"></i>  
+                  <input class="comment-input" type="text" placeholder="Add a comment..." />
+                </div>
+  
+                <p class="post-link">Post</p>
+              </div>
+            </div>
+
+            <!-- ULRTON -->
+            <div class="post">
+              <div class="post-header">
+                <div>
+                  <div class="post-header-profile">
+                    <img class="post-icon" src="images/pp/ultron-pp.jpg" alt="Eric Cartman" />  
+                    <span><strong class="nav-icon">ultron1968</strong></span>
                   </div>
-                </div>
+                </div>  
 
-                <div class="kill-right">
-                  <a href=""><i class="fa-regular fa-bookmark"></i></a>
-                </div>
+                <div class="nav-icon ellipsis"><i class="fa-solid fa-ellipsis"></i></div>
               </div>
-
-              <p><strong>7 billion likes</strong></p>
-
-              <p>
-                <strong>d4rthv4d3r</strong> Some idiots trashed my crib
-                <span class="hashtag">#rebelscum</span>
-                <span class="hashtag">#battleofendor</span>
-                <span class="hashtag">#jedimuppets</span>
-              </p>
-
-              <p class="view-all-comments fs-sm">View all 300 comments</p>
-
-              <p class="view-all-comments fs-sm">3 hours ago</p>
-            </div>
-
-            <div class="post-comment flex-v flex-between">
-              <div>
-                <i class="fa-regular fa-face-smile fs-xl"></i>
-
-                <input type="text" placeholder="Add a comment..." />
-              </div>
-
-              <p class="fs-sm">Post</p>
-            </div>
-          </div>
-
-          <!-- CARTMAN POST -->
-
-          <div class="post">
-            <div class="post-header flex-v flex-between">
-              <div>
-                <div class="flex-v flex-start">
-                  <img
-                    class="flex-v post-icon"
-                    src="images/pp/cartman-pp.jpg"
-                    alt="Darth Vader"
-                  />
-
-                  <span><strong>c4rtm4n</strong></span>
-                </div>
-              </div>
-
-              <div><i class="fa-solid fa-ellipsis"></i></div>
-            </div>
-
-            <div class="post-image">
-              <img src="images/posts/south-park.jpg" alt="The Boys" />
-            </div>
-
-            <div class="post-info">
-              <div class="fs-xl flex-v flex-between">
-                <div class="flex-v flex-start">
-                  <div class="post-icon">
-                    <a href=""><i class="fa-regular fa-heart"></i></a>
+  
+              <div class="post-image"><img src="images/posts/avengers.jpg" alt="Crib" /></div>
+  
+              <div class="post-info">
+                <div class="post-info-icons">
+                  <div class="like-n-comment">
+                    <div class="post-icon"><i class="fa-regular fa-heart"></i></div>  
+                    <div class="post-icon"><i class="fa-regular fa-comment flip"></i></div>  
+                    <div class="post-icon"><i class="fa-regular fa-paper-plane"></i></div>
                   </div>
 
-                  <div class="post-icon">
-                    <a href=""><i class="fa-regular fa-comment flip"></i></a>
-                  </div>
-
-                  <div class="post-icon">
-                    <a href=""><i class="fa-regular fa-paper-plane"></i></a>
-                  </div>
+                  <div class="nav-icon"><i class="fa-regular fa-bookmark"></i></div>
                 </div>
-
-                <div class="kill-right">
-                  <a href=""><i class="fa-regular fa-bookmark"></i></a>
+  
+                <p class="nav-icon likes-count"><strong>9,652 likes</strong></p>
+  
+                <p class="post-comment">
+                  <strong class="nav-icon">ultron1968</strong> Feeling evil...may kill these fools
+                  later...
+                  <span class="hashtag">#avengersassemble</span>
+                  <span class="hashtag">#bunchoffools</span>
+                  <span class="hashtag">#nomatchforme</span>
+                </p>
+  
+                <p class="nav-icon view-all-comments">View all 329 comments</p>
+  
+                <p class="nav-icon time-posted">5 HOURS AGO</p>
+              </div>
+  
+              <div class="post-comments">
+                <div class="comment-container">
+                  <i class="nav-icon smiles fa-regular fa-face-smile fs-xl"></i>  
+                  <input class="comment-input" type="text" placeholder="Add a comment..." />
                 </div>
+  
+                <p class="post-link">Post</p>
               </div>
-
-              <p><strong>2,634 likes</strong></p>
-
-              <p>
-                <strong>c4rtm4n</strong> Group photo of the crew
-                <span class="hashtag">#southparkcrew</span>
-                <span class="hashtag">#kickthebaby</span>
-                <span class="hashtag">#ohmygodtheykilledkenny</span>
-              </p>
-
-              <p class="view-all-comments fs-sm">View all 128 comments</p>
-
-              <p class="view-all-comments fs-sm">5 hours ago</p>
-            </div>
-
-            <div class="post-comment flex-v flex-between">
-              <div>
-                <i class="fa-regular fa-face-smile fs-xl"></i>
-
-                <input type="text" placeholder="Add a comment..." />
-              </div>
-
-              <p class="fs-sm">Post</p>
-            </div>
-          </div>
-
-          <!-- ULTRON POST -->
-
-          <div class="post">
-            <div class="post-header flex-v flex-between">
-              <div>
-                <div class="flex-v flex-start">
-                  <img
-                    class="flex-v post-icon"
-                    src="images/pp/ultron-pp.jpg"
-                    alt="Darth Vader"
-                  />
-
-                  <span><strong>ultron1968</strong></span>
-                </div>
-              </div>
-
-              <div><i class="fa-solid fa-ellipsis"></i></div>
-            </div>
-
-            <div class="post-image">
-              <img src="images/posts/avengers.jpg" alt="The Boys" />
-            </div>
-
-            <div class="post-info">
-              <div class="fs-xl flex-v flex-between">
-                <div class="flex-v flex-start">
-                  <div class="post-icon">
-                    <a href=""><i class="fa-regular fa-heart"></i></a>
-                  </div>
-
-                  <div class="post-icon">
-                    <a href=""><i class="fa-regular fa-comment flip"></i></a>
-                  </div>
-
-                  <div class="post-icon">
-                    <a href=""><i class="fa-regular fa-paper-plane"></i></a>
-                  </div>
-                </div>
-
-                <div class="kill-right">
-                  <a href=""><i class="fa-regular fa-bookmark"></i></a>
-                </div>
-              </div>
-
-              <p><strong>9,652 likes</strong></p>
-
-              <p>
-                <strong>ultron1968</strong> Feeling evil...may kill these fools
-                later...
-                <span class="hashtag">#avengersassemble</span>
-                <span class="hashtag">#bunchoffools</span>
-                <span class="hashtag">#nomatchforme</span>
-              </p>
-
-              <p class="view-all-comments fs-sm">View all 329 comments</p>
-
-              <p class="view-all-comments fs-sm">7 hours ago</p>
-            </div>
-
-            <div class="post-comment flex-v flex-between">
-              <div>
-                <i class="fa-regular fa-face-smile fs-xl"></i>
-
-                <input type="text" placeholder="Add a comment..." />
-              </div>
-
-              <p class="fs-sm">Post</p>
             </div>
           </div>
         </section>
 
+        <!-- SUGGESTIONS & FOOTER SECTION -->
         <section id="suggestions">
-          <div class="flex-v flex-start">
-            <img
-              class="story-icon profile-icon"
-              src="images/pp/pp.jpg"
-              alt="Andy Jacko"
-            />
+          <!-- PROFILE INFO -->
+          <div id="suggestions-profile" onClick="window.location.href='profile.html'">
+            <img class="nav-icon suggestions-pp" src="images/pp/pp.jpg" alt="Andy Jacko" />
+            <div><p><strong class="nav-icon">4ndyjacko</strong><br /><span>Andy Jacko</span></p></div>
+          </div>
 
-            <div>
-              <p><strong>4ndyJacko</strong><br />Andy Jacko</p>
+          <!-- WHO TO FOLLOW SECTION -->
+          <div id="who-to-follow">            
+            <p id="s-f-y">Suggestions for you</p>
+            <p id="see-all" class="nav-icon">See All</p>                 
+          </div>
+
+          <!-- FOLLOW US -->
+          <div id="w-t-f-container">
+            <!-- SKELETOR -->
+            <div class="w-t-f-box">
+              <div class="w-t-f-user">
+                <img class="nav-icon follow-icon" src="images/pp/skeletor-pp.jpg" alt="Skeletor" />
+                <p><strong class="nav-icon">skeletor</strong><img src="images/pp/verified.png" alt="Verified" class="verified" /><br /><span>Delaygram recommended</span></p>
+              </div>
+              <p class="follow-link">Follow</p>
+            </div>
+
+            <!-- COW -->
+            <div class="w-t-f-box">
+              <div class="w-t-f-user">
+                <img class="nav-icon follow-icon" src="images/pp/cow-pp.jpg" alt="Skeletor" />
+                <p><strong class="nav-icon">cowcowcow</strong><img src="images/pp/verified.png" alt="Verified" class="verified" /><br /><span>Delaygram recommended</span></p>
+              </div>
+              <p class="follow-link">Follow</p>
+            </div>
+
+            <!-- CHICKEN -->
+            <div class="w-t-f-box">
+              <div class="w-t-f-user">
+                <img class="nav-icon follow-icon" src="images/pp/chicken-pp.jpg" alt="Skeletor" />
+                <p><strong class="nav-icon">chicken_1</strong><img src="images/pp/verified.png" alt="Verified" class="verified" /><br /><span>Delaygram recommended</span></p>
+              </div>
+              <p class="follow-link">Follow</p>
+            </div>
+
+            <!-- JOKER -->
+            <div class="w-t-f-box">
+              <div class="w-t-f-user">
+                <img class="nav-icon follow-icon" src="images/pp/joker-pp.jpg" alt="Skeletor" />
+                <p><strong class="nav-icon">jok3r</strong><img src="images/pp/verified.png" alt="Verified" class="verified" /><br /><span>Delaygram recommended</span></p>
+              </div>
+              <p class="follow-link">Follow</p>
+            </div>
+
+            <!-- JASON -->
+            <div class="w-t-f-box">
+              <div class="w-t-f-user">
+                <img class="nav-icon follow-icon" src="images/pp/jason-pp.jpg" alt="Skeletor" />
+                <p><strong class="nav-icon">jason_v</strong><img src="images/pp/verified.png" alt="Verified" class="verified" /><br /><span>Delaygram recommended</span></p>
+              </div>
+              <p class="follow-link">Follow</p>
             </div>
           </div>
 
-          <div id="who-to-follow">
-            <div id="see-all" class="flex-v flex-between">
-              <p>Suggestions for you</p>
-              <p><strong>See All</strong></p>
-            </div>
-            <div id="suggestions-container">
-              <div class="fs-sm flex-v flex-between">
-                <div class="flex-v flex-start">
-                  <img
-                    class="flex-v follow-icon"
-                    src="images/pp/skeletor-pp.jpg"
-                    alt="Skeletor"
-                  />
-
-                  <p>
-                    <strong>Skeletor</strong
-                    ><img
-                      src="images/pp/verified.png"
-                      alt="Verified"
-                      class="verified"
-                    /><br />Delaygram recommended
-                  </p>
-                </div>
-
-                <p><a href="" class="follow-link">Follow</a></p>
-              </div>
-              <div class="fs-sm flex-v flex-between">
-                <div class="flex-v flex-start">
-                  <img
-                    class="flex-v follow-icon"
-                    src="images/pp/cow-pp.jpg"
-                    alt="Cow"
-                  />
-
-                  <p>
-                    <strong>Cow</strong
-                    ><img
-                      src="images/pp/verified.png"
-                      alt="Verified"
-                      class="verified"
-                    /><br />Delaygram recommended
-                  </p>
-                </div>
-
-                <p><a href="" class="follow-link">Follow</a></p>
-              </div>
-              <div class="fs-sm flex-v flex-between">
-                <div class="flex-v flex-start">
-                  <img
-                    class="flex-v follow-icon"
-                    src="images/pp/chicken-pp.jpg"
-                    alt="Freddy Kreuger"
-                  />
-
-                  <p>
-                    <strong>Chicken</strong
-                    ><img
-                      src="images/pp/verified.png"
-                      alt="Verified"
-                      class="verified"
-                    /><br />Delaygram recommended
-                  </p>
-                </div>
-
-                <p><a href="" class="follow-link">Follow</a></p>
-              </div>
-              <div class="fs-sm flex-v flex-between">
-                <div class="flex-v flex-start">
-                  <img
-                    class="flex-v follow-icon"
-                    src="images/pp/joker-pp.jpg"
-                    alt="Joker"
-                  />
-
-                  <p>
-                    <strong>Joker</strong
-                    ><img
-                      src="images/pp/verified.png"
-                      alt="Verified"
-                      class="verified"
-                    /><br />Delaygram recommended
-                  </p>
-                </div>
-
-                <p><a href="" class="follow-link">Follow</a></p>
-              </div>
-              <div class="fs-sm flex-v flex-between">
-                <div class="flex-v flex-start">
-                  <img
-                    class="flex-v follow-icon"
-                    src="images/pp/thanos-pp.jpg"
-                    alt="Thanos"
-                  />
-
-                  <p>
-                    <strong>Thanos</strong
-                    ><img
-                      src="images/pp/verified.png"
-                      alt="Verified"
-                      class="verified"
-                    /><br />Delaygram recommended
-                  </p>
-                </div>
-
-                <p><a href="" class="follow-link">Follow</a></p>
-              </div>
-            </div>
-          </div>
-
-          <footer class="fs-sm">
+          <!-- FOOTER & LINKS -->
+          <footer class="footer">
             <div id="footer-links">
               <a href="">About</a>
+              <a href="">Help</a>
+              <a href="">Press</a>
+              <a href="">API</a>
+              <a href="">Jobs</a>
               <a href="">Privacy</a>
               <a href="">Terms</a>
-              <a href="">Contact</a>
-              <a href="">Help</a>
+              <a href="">Locations</a>
+              <a href="">Language</a>
             </div>
             <div id="footer-copy">
-              &copy; 2022 Delaygram by
-              <a href="https://andyjacko.com" target="_blank">Andy Jacko</a>
+              &copy; 2022 DELAYGRAM BY
+              <a href="https://andyjacko.com" target="_blank">ANDY JACKO</a>
             </div>
           </footer>
         </section>
       </div>
     </main>
 
-    <script src="js/script.js"></script>
+    <script src="js/scripts.js"></script>
   </body>
 </html>

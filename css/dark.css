@@ -2,16 +2,15 @@
 
 :root {
   --blue: #0095f6;
-  --white: #ffffff;
-  --black: #262626;
-  --gray: #c7c7c7;
-  --light-gray: #dbdbdb;
-  --medium-gray: #8e8e8e;
+  --white: #262626;
+  --black: #eeeeee;
+  --gray: #6d6d6d;
+  --light-gray: #181818;
+  --medium-gray: #7c7c7c;
   --searchBG: #f2f3f5;
   --searchPH: #bcbcbc;
-  --bodyBG: #fafafa;
+  --bodyBG: #303030;
   --storyIB: #c41e1e;
-  --vac: #aaaaaa;
 }
 
 * {
