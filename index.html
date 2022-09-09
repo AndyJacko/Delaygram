@@ -10,12 +10,47 @@
     <title>Delaygram</title>
   </head>
   <body>
-    <!-- HEADER SECTION -->
+    <!-- SMALL HEADERS SECTION -->
+    <!-- TOP HEADER -->
+    <header id="nav-top">
+      <div id="header-container-top-sm">
+        <!-- NAV ICON -->
+        <div class="nav-icon"><i class="fa-solid fa-camera"></i></div>
+
+        <!-- LOGO -->
+        <div id="logo" class="nav-icon" onClick="window.location.href='index.html'"><img id="logo-img-sm" src="images/logo.png" alt="Delaygram" /></div>
+
+        <!-- NAV ICON -->
+        <div class="nav-icon"><i class="fa-regular fa-paper-plane"></i></div>
+      </div>      
+    </header>
+
+    <!-- BOTTOM HEADER -->
+    <header id="nav-bottom">
+      <div id="header-container-bottom-sm">
+        <!-- NAV ICONS -->
+        <div class="nav-icon" onClick="window.location.href='index.html'"><i class="fa-solid fa-house"></i></div>
+        <div class="nav-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+        <div class="nav-icon"><i class="fa-regular fa-square-plus"></i></div>
+        <div class="nav-icon"><i class="fa-regular fa-compass"></i></div>
+        <div class="nav-icon"><i class="fa-regular fa-heart"></i></div>
+        <div class="nav-icon"><img id="pp-sm" class="flex-v" src="images/pp/pp.jpg" alt="Andy Jacko" /></div>
+      </div>
+
+      <!-- PROFILE MENU -->
+      <div id="profile-menu-sm" class="hide">
+        <p id="p-link" class="nav-icon" onClick="window.location.href='profile.html'"><i class="fa-regular fa-circle-user"></i>Profile</p>
+        <p><i class="fa-solid fa-repeat"></i><span id="theme" onClick="toggleDarkness();">Dark Theme</span></p>
+        <div id="logout">Log out</div>
+      </div>
+    </header>
+
+    <!-- LARGE HEADER SECTION -->
     <header>
-      <div id="header-container">
+      <div id="header-container-lg">
         <!-- LOGO -->
         <div id="logo" class="nav-icon" onClick="window.location.href='index.html'">
-          <img id="logo-img" src="images/logo.png" alt="Delaygram" />
+          <img id="logo-img-lg" src="images/logo.png" alt="Delaygram" />
         </div>
 
         <!-- SEARCH BOX -->
@@ -30,16 +65,13 @@
           <div class="nav-icon"><i class="fa-regular fa-square-plus"></i></div>
           <div class="nav-icon"><i class="fa-regular fa-compass"></i></div>
           <div class="nav-icon"><i class="fa-regular fa-heart"></i></div>
-          <div class="nav-icon"><img id="pp" class="flex-v" src="images/pp/pp.jpg" alt="Andy Jacko" /></div>
+          <div class="nav-icon"><img id="pp-lg" class="flex-v" src="images/pp/pp.jpg" alt="Andy Jacko" /></div>
         </nav>
 
         <!-- PROFILE MENU -->
-        <div id="profile-menu" class="hide">
+        <div id="profile-menu-lg" class="hide">
           <p id="p-link" class="nav-icon" onClick="window.location.href='profile.html'"><i class="fa-regular fa-circle-user"></i>Profile</p>
-          <p>
-            <i class="fa-solid fa-repeat"></i
-            ><span id="theme" onClick="toggleDarkness();">Dark Theme</span>
-          </p>
+          <p><i class="fa-solid fa-repeat"></i><span id="theme" onClick="toggleDarkness();">Dark Theme</span></p>
           <div id="logout">Log out</div>
         </div>
       </div>
