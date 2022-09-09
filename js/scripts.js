@@ -7,7 +7,8 @@ const toggleDarkness = () => {
     if (document.getElementById("logo-img-lg")){
       document.getElementById("logo-img-lg").setAttribute("src", "images/logo.png");
     }
-    document.getElementById("theme").textContent = "Dark Theme";
+    document.getElementById("theme-sm").textContent = "Dark Theme";
+    document.getElementById("theme-lg").textContent = "Dark Theme";
     document.getElementById("profile-menu-sm").classList.add("hide");
     document.getElementById("profile-menu-lg").classList.add("hide");
   } else {
@@ -18,7 +19,8 @@ const toggleDarkness = () => {
     if (document.getElementById("logo-img-lg")) {
       document.getElementById("logo-img-lg").setAttribute("src", "images/logo2.png");
     }
-    document.getElementById("theme").textContent = "Light Theme";
+    document.getElementById("theme-sm").textContent = "Light Theme";
+    document.getElementById("theme-lg").textContent = "Light Theme";
     document.getElementById("profile-menu-sm").classList.add("hide");
     document.getElementById("profile-menu-lg").classList.add("hide");
   }
